@@ -90,6 +90,15 @@ if (point<5) {
     if (++count<6){
         return;
     }
+
+}else if(point<40){
+    if (++count<4){
+        return;
+    }
+}else {
+    if (++count<3){
+        return;
+    }
 }
 
     count = 0;
