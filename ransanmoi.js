@@ -42,6 +42,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 
 }
+//tạo hàm reset lai game , sẽ vẽ lại toàn bộ và reset lại điểm
 function reset() {
     alert("Game over!!!");
     snake.x = 160;
