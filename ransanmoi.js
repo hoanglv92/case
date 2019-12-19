@@ -25,18 +25,18 @@ var snake = {
     maxCells: 3
 
 };
-
+// tạo con mồi, là hình vuông với tọa độ xuất hiện theo trục hướng  là x,y
 var count = 0;
 
 var apple = {
 
-    x: 320,
+    x: 240,
 
-    y: 320
+    y: 240
 
 };
 
-
+// tạo gàm random để hiện thị con mồi với tọa độ random tùy chọn
 function getRandomInt(min, max) {
 
     return Math.floor(Math.random() * (max - min)) + min;
@@ -70,13 +70,13 @@ function reset() {
 // game loop
 
 function loop() {
-//hàm này giống như setTimeout, sẽ gọi lại hàm loop khi loop thực thi xong
+//hàm này giống như setTimeout, sẽ liên tục gọi lại hàm loop mỗi khi loop thực thi xong
 
     requestAnimationFrame(loop);
 
 
     // tốc độ rắn trong  game 4fps   //loop to 15 fps instead of 60 - 60/15 = 4
-    // fps cao thì tốc độ cao và ngược lại
+    // fps cao thì tốc độ game thấp và ngược lại
 if (point<5) {
     if (++count < 10) {
         return;
