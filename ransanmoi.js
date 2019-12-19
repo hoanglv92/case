@@ -203,7 +203,7 @@ if (point<5) {
 
 document.addEventListener('keydown', function(e) {
 
-    // lọc sự kiện keydown để rắn không di ngược lại
+    // lọc sự kiện keydown
     //sang trái khi phím sang trái được nhấn và snacke.dx=0 thì tại đầu rắn di chuyển sang trái với giá trị là
     // move=16 trục y giữ nguyên không thay đổi. Cũng như vậy khi nhấn phím lên trên hoặc xuống dưới thì chỉ thay
     // giá trị theo hướng y hướng x không thay đổi
