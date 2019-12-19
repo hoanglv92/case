@@ -56,8 +56,8 @@ function reset() {
     snake.dx = move;
 
     snake.dy = 0;
-
-
+    //lấy tọa độ xuất hiện x,y ngẫu nhiên của  con mồi apple trong canvas
+    // nhỏ nhất bằng 0 tối đa 400 bằng canvas
     apple.x = getRandomInt(0, 25) * move;
 
     apple.y = getRandomInt(0, 25) * move;
